@@ -1,0 +1,31 @@
+[
+
+    //Fedora Media Writer
+    (
+        enabled: true,
+        appid: "mediawriter",
+        title: ".*",
+    ),
+
+    //Calculator
+    (
+        enabled: true,
+        appid: "org.gnome.Calculator",
+        title: ".*",
+    ),
+
+    //Characters
+    (
+        enabled: true,
+        appid: "org.gnome.Characters",
+        title: ".*",
+    ),
+
+    //Steam
+    (
+        enabled: true,
+        appid: "steam",
+        title: ".*",
+    ),
+
+]
