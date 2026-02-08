@@ -16,6 +16,8 @@ USER_HOME=$(eval printf ~$SUDO_USER)
 
 cp -r etc /
 cp -r usr /
+sudo -u "$SUDO_USER" cp -r .bashrc "$USER_HOME"
+sudo -u "$SUDO_USER" cp -r .bashrc.d "$USER_HOME"
 sudo -u "$SUDO_USER" cp -r .config "$USER_HOME"
 sudo -u "$SUDO_USER" cp -r .scripts "$USER_HOME"
 dnf5 install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
@@ -30,7 +32,6 @@ dnf5 install --allowerasing -y \
     evince \
     fastfetch \
     ffmpeg \
-    fish \
     flatseal \
     gamescope \
     gimp \

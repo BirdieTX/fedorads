@@ -1,0 +1,2 @@
+alias fedora='$HOME/.scripts/update.sh'
+alias patch='$HOME/.scripts/patch.sh'
